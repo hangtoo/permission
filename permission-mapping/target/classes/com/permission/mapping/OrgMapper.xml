@@ -125,7 +125,7 @@
     where Id = #{id,jdbcType=INTEGER}
   </delete>
   
-   <delete id="deleteByCascadeId" parameterType="java.lang.Integer" >
+   <delete id="deleteByCascadeId" parameterType="java.lang.String" >
     delete from org
     where CascadeId  LIKE CONCAT('%',#{cascadeId,jdbcType=VARCHAR},'%')
   </delete>
