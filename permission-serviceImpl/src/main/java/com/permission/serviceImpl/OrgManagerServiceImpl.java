@@ -54,6 +54,8 @@ public class OrgManagerServiceImpl implements IOrgManagerService {
 		// TODO Auto-generated method stub
 		if (org.getId() == 0) {
 			ChangeModuleCascade(org);
+			org.setIsleaf(false);
+			org.setIsautoexpand(false);
 			org.setId(_orgDao.insert(org));
 		}
 		else{
@@ -133,10 +135,10 @@ public class OrgManagerServiceImpl implements IOrgManagerService {
 	private void ChangeModuleCascade(Org org) throws Exception{
 		String cascadeId;
 		int currentCascadeId = 1;  //当前结点的级联节点最后一位
-		List<Category> sameLevels = _orgDao.SameLevels(org.getParentid(), org.getId());
-		for (Category obj : sameLevels) {
-			String[] arrStrings= obj.getCascadeid().split(",");
-			int objCascadeId = Integer.getInteger(arrStrings[arrStrings.length-1]);
+		List<Org> sameLevels = _orgDao.SameLevels(org.getParentid(), org.getId());
+		for (Org obj : sameLevels) {
+			String[] arrStrings= obj.getCascadeid().split("\\.");
+			int objCascadeId = Integer.valueOf(arrStrings[arrStrings.length-1]);
 			if (currentCascadeId <= objCascadeId) currentCascadeId = objCascadeId + 1;
 		}
 

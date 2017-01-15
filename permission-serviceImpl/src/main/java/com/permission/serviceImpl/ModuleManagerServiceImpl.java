@@ -182,7 +182,7 @@ public class ModuleManagerServiceImpl implements IModuleManagerService {
 		List<Module> sameLevels=_moduleDao.SameLevels(module.getParentid(), module.getId());
 		for (Module obj : sameLevels) {
 			String[] arrStrings= obj.getCascadeid().split(",");
-			int objCascadeId = Integer.getInteger(arrStrings[arrStrings.length-1]);
+			int objCascadeId = Integer.valueOf(arrStrings[arrStrings.length-1]);
 			if (currentCascadeId <= objCascadeId) currentCascadeId = objCascadeId + 1;
 		}
 

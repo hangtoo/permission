@@ -189,7 +189,7 @@ CREATE TABLE `org` (
   `HotKey` varchar(255) NOT NULL DEFAULT ' ',
   `ParentId` int(10) NOT NULL,
   `ParentName` varchar(255) NOT NULL DEFAULT ' ',
-  `IsLeaf` bit(1) NOT NULL,
+  `IsLeaf` bit(1) NOT NULL DEFAULT 1,
   `IsAutoExpand` bit(1) NOT NULL,
   `IconName` varchar(255) NOT NULL DEFAULT ' ',
   `Status` int(10) NOT NULL,

@@ -38,5 +38,5 @@ public interface OrgMapper {
 
     int updateByPrimaryKey(Org record);
 
-	List<Category> SameLevels(Integer parentid, Integer id);
+	List<Org> SameLevels(@Param("parentId")Integer parentId,@Param("id")Integer id);
 }

@@ -224,11 +224,11 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                     <input type="hidden" name="jfinal_token" value="${jfinal_token }" />
                     <div class="form-group">
                         <label for="j_username" class="t">用户名：</label>
-                        <input id="j_username" value="" name="username" type="text" class="form-control x319 in" autocomplete="off">
+                        <input id="j_username" value="admin" name="username" type="text" class="form-control x319 in" autocomplete="off">
                     </div>
                     <div class="form-group">
                         <label for="j_password" class="t">密 码：</label>
-                        <input id="j_password" value="" name="password" type="password" class="form-control x319 in">
+                        <input id="j_password" value="admin" name="password" type="password" class="form-control x319 in">
                     </div>
 
                     <div class="form-group">
