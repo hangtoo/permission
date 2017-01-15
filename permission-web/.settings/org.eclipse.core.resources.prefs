@@ -1,6 +1,7 @@
 eclipse.preferences.version=1
 encoding//src/main/java=UTF-8
 encoding//src/main/resources=UTF-8
+encoding//src/main/resources/resource/jdbc.properties=UTF-8
 encoding//src/main/webapp/WEB-INF/views/categorymanager/add.jsp=UTF-8
 encoding//src/main/webapp/WEB-INF/views/categorymanager/index.jsp=UTF-8
 encoding//src/main/webapp/WEB-INF/views/error/noAccess.jsp=UTF-8

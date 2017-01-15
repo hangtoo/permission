@@ -4,7 +4,7 @@ String path = request.getContextPath();
 String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
 %>
 
-div class="bjui-pageContent">
+<div class="bjui-pageContent">
     <input style="display: none" id="userid" value="${userid}"/>
     <div style="float: left; width: 220px; height: 240px; overflow: auto;" class="table table-bordered">
         <ul id="lookupTree" class="ztree"></ul>

@@ -1,10 +1,4 @@
 <%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
-<%
-String path = request.getContextPath();
-String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
-%>
- <base href="<%=basePath%>">
- <base href="<%=path%>">
 <div class="bjui-pageHeader" style="background:#FFF;">
     <div style="padding: 0 15px;">
         <h4 style="margin-bottom:20px;">
