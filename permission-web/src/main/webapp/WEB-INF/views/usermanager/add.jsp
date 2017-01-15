@@ -1,9 +1,5 @@
 <%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-<%
-String path = request.getContextPath();
-String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
-%>
+<%@ include  file="/WEB-INF/views/shared/_resource.jsp"%>
 
 <div class="bjui-pageContent">
     <form action="<%=path %>/usermanager/add.do" class="pageForm" data-toggle="validate">

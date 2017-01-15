@@ -1,15 +1,9 @@
 <%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
-<%
-String path = request.getContextPath();
-String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
-%>
+<%@ include  file="/WEB-INF/views/shared/_resource.jsp"%>
 
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
   <head>
-     <base href="<%=basePath%>">
-     <base href="<%=path%>">
-    
     <title>无权访问</title>    
 	 <link rel="shortcut icon" type="image/x-icon" href="<%=path%>/favicon.ico" media="screen" /> 
      <script src="<%=path%>/static/BJUI/js/jquery-1.11.3.min.js"></script>

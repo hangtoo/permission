@@ -1,8 +1,6 @@
 <%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ include  file="/WEB-INF/views/shared/_resource.jsp"%>
 <%
-String path = request.getContextPath();
-String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
 String _prefix = "assignResForUser";
 String _treeId = _prefix + "Tree";
 String _gridId = _prefix + "Grid";
